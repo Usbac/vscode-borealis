@@ -1,9 +1,9 @@
 {
 	"name": "borealis",
-	"displayName": "%displayName%",
-	"description": "%description%",
+	"displayName": "Borealis",
+	"description": "Syntax highlighting for the Borealis language",
 	"version": "1.0.0",
-	"publisher": "vscode",
+	"publisher": "usbac",
 	"license": "MIT",
 	"engines": {
 		"vscode": "*"

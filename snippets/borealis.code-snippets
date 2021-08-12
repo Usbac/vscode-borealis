@@ -1,6 +1,6 @@
 {
     "For-In Loop": {
-		"prefix": "for",
+		"prefix": "foreach",
 		"body": [
 			"foreach (${1:array}, ${2:key}${3:: ${4:value}}) {",
 			"\t$0",
