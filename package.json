@@ -5,8 +5,17 @@
 	"version": "0.1.0",
 	"publisher": "usbac",
 	"license": "MIT",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "*"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Usbac/vscode-borealis.git"
 	},
 	"contributes": {
 		"languages": [
