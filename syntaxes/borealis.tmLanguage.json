@@ -1,0 +1,133 @@
+{
+	"version": "0.1.0",
+	"name": "borealis",
+	"scopeName": "source.borealis",
+	"patterns": [
+		{
+			"match": "(?<![\\w\\d.])\\d+(\\.\\d+)?([eE]-?\\d*)?",
+			"name": "constant.numeric.float.borealis"
+		},
+		{
+			"begin": "'",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.borealis"
+				}
+			},
+			"end": "'",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.borealis"
+				}
+			},
+			"name": "string.quoted.single.borealis"
+		},
+		{
+			"begin": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.borealis"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.borealis"
+				}
+			},
+			"name": "string.quoted.double.borealis",
+			"patterns": [
+				{
+					"include": "#escaped_char"
+				}
+			]
+		},
+		{
+			"begin": "/\\*",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.begin.borealis"
+				}
+			},
+			"end": "\\*/",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.end.borealis"
+				}
+			},
+			"name": "comment.block.borealis"
+		},
+		{
+			"begin": "#",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.borealis"
+				}
+			},
+			"end": "\\n",
+			"name": "comment.line.single.borealis"
+		},
+		{
+			"match": "\\bpublic\\b",
+			"name": "storage.modifier.borealis"
+		},
+		{
+			"match": "\\bconst\\b",
+			"name": "storage.type.const.borealis"
+		},
+		{
+			"match": "\\b(any|number|string|array|object)\\b",
+			"name": "keyword.other.type.borealis"
+		},
+		{
+			"match": "\\b(if|else|foreach|while|return|break|continue|case|import)\\b",
+			"name": "keyword.control.borealis"
+		},
+		{
+			"match": "(?<![^.]\\.|:)\\b(false|true|null|_START_DIR|_START_FILE|_FILE|_VERSION|_ARGS)\\b",
+			"name": "constant.language.borealis"
+		},
+		{
+			"match": "(?<![^.]\\.|:)\\b(this)\\b",
+			"name": "variable.language.this.borealis"
+		},
+		{
+			"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*(?:[({\"']|\\[\\[))",
+			"name": "support.function.any-method.borealis"
+		},
+		{
+			"match": "\\b(Array|Bit|Crypt|Date|File|Io|Json|Math|Number|Object|Os|Socket|String)\\b",
+			"name": "support.class.builtin.borealis"
+		},
+		{
+			"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)",
+			"name": "variable.other.borealis"
+		},
+		{
+			"match": "\\+|-|%|\\*|\\/|\\^|&&|\\|\\||eq|ne|==?|<=?|>=?|\\?|<<|(?<!\\.)\\.{2}(?!\\.)",
+			"name": "keyword.operator.borealis"
+		}
+	],
+	"repository": {
+		"escaped_char": {
+			"patterns": [
+				{
+					"match": "\\\\[nrt0\\\\\"'\\n]",
+					"name": "constant.character.escape.borealis"
+				},
+				{
+					"match": "\\\\[0-8]{1,3}",
+					"name": "constant.character.escape.byte.borealis"
+				},
+				{
+					"match": "\\\\x[0-9A-Fa-f]{1,2}",
+					"name": "constant.character.escape.byte.borealis"
+				},
+				{
+					"match": "\\\\u[0-9A-Za-z]{4}",
+					"name": "constant.character.escape.unicode.borealis"
+				}
+			]
+		}
+	}
+}

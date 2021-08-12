@@ -1,0 +1,39 @@
+{
+	"name": "borealis",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"version": "1.0.0",
+	"publisher": "vscode",
+	"license": "MIT",
+	"engines": {
+		"vscode": "*"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "borealis",
+				"extensions": [
+					".bor"
+				],
+				"aliases": [
+					"Borealis",
+					"borealis"
+				],
+				"configuration": "./language-configuration.json"
+			}
+	  	],
+	  	"grammars": [
+			{
+				"language": "borealis",
+				"scopeName": "source.borealis",
+				"path": "./syntaxes/borealis.tmLanguage.json"
+			}
+	  	],
+		"snippets": [
+			{
+			  "language": "borealis",
+			  "path": "./snippets/borealis.code-snippets"
+			}
+		]
+	}
+}
