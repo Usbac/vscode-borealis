@@ -2,7 +2,7 @@
 	"name": "borealis",
 	"displayName": "Borealis",
 	"description": "Syntax highlighting for the Borealis language",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"publisher": "usbac",
 	"license": "MIT",
 	"engines": {
