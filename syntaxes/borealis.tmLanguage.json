@@ -80,7 +80,7 @@
 			"name": "storage.type.const.borealis"
 		},
 		{
-			"match": "\\b(any|number|string|array|object|function)\\b",
+			"match": "\\b(any|number|string|array|table|function)\\b",
 			"name": "keyword.other.type.borealis"
 		},
 		{
@@ -104,7 +104,7 @@
 			"name": "support.function.any-method.borealis"
 		},
 		{
-			"match": "\\b(Array|Bit|Crypt|Date|File|Io|Json|Math|Number|Object|Os|Socket|String)\\b",
+			"match": "\\b(Array|Bit|Crypt|Date|Error|File|Io|Json|Math|Number|Table|Os|Socket|String)\\b",
 			"name": "support.class.builtin.borealis"
 		},
 		{
