@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://borealislang.com/public/logo.png" alt="Borealis logo" width="200">
+  <img src="https://github.com/Usbac/borealis/assets/38147742/3ebf177c-e3aa-4076-bd3b-4154c0af6215" alt="Borealis logo" width="200"/>
   <br>
   Borealis
   <br>
